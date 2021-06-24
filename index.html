@@ -2,10 +2,16 @@
 <html lang="es">
 
   <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Diseñador Freelancer</title>
-
+    <link rel="preload" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="../css/styles.css" as="style">
+    <link rel="stylesheet" href="../css/styles.css">
   </head>
 
 
@@ -13,22 +19,24 @@
 
 <header>
 
-  <h1>Bruno Labozzetta | Full Stack Web Developer</h1>
+  <h1 class="titulo">Bruno Labozzetta | Full Stack Web <span>Developer</span></h1>
 
 </header>
 
-<nav>
-  <a href="#">Inicio</a>
-  <a href="#">Sobre Mi</a>
-  <a href="#">Clientes</a>
-  <a href="#">Contacto</a>
-</nav>
+<div class="nav-bg">
+  <nav class="navegacion-principal contenedor">
+    <a href="#">Inicio</a>
+    <a href="#">Sobre Mi</a>
+    <a href="#">Clientes</a>
+    <a href="#">Contacto</a>
+  </nav>
+</div>
 
 
 
 <section>
 
-  <h2>Diseño y desarrollo web Full Stack</h2>
+  <h2 class="titulo">Diseño y desarrollo web Full Stack</h2>
   <p>
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="2" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -115,6 +123,40 @@
   <h2>Contacto</h2>
 
 </section>
+
+<form>
+  <fieldset>
+    <legend> Contáctanos llenando todos los campos</legend>
+
+    <div class="">
+      <label>Nombre</label>
+      <input type="text" placeholder="Tu Nombre">
+    </div>
+
+    <div class="">
+      <label>Teléfono</label>
+      <input type="tel" placeholder="Tu Teléfono">
+    </div>
+
+    <div class="">
+      <label>E-Mail</label>
+      <input type="email" placeholder="Tu Mail">
+    </div>
+
+    <div class="">
+      <label>Mensaje</label>
+      <textarea></textarea>
+    </div>
+
+    <div class="">
+      <input type="submit" name="" value="Enviar">
+    </div>
+
+
+
+  </fieldset>
+
+</form>
 
 
 <footer>
